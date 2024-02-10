@@ -1,0 +1,10 @@
+4
+ggu814h5py8k
+5lfa89797zi9
+u63339410gj8
+5hu1tnd901a4
+3
+2
+POST https://example.com/?token=pz9iy1j438ol&csrf=a79i49&id=c7v35
+POST https://example.com/?token=ggu814h5py8k&csrf=79jm98h6&id=1856a
+POST https://example.com/?token=5lfa89797zi9&csrf=0y9v62o5&id=715w7&name=sam
