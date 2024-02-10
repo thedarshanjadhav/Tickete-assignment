@@ -1,5 +1,7 @@
+// import chakra ui
 import {  Flex, Heading, Text, VStack, Divider, Box, AccordionItem, AccordionButton, AccordionPanel, Accordion, Img } from "@chakra-ui/react";
 
+// import images
 import infoblack from '../assets/Images/Info-black.svg';
 import gpay from '../assets/Images/google-pay.svg'
 import apay from '../assets/Images/apple-pay.svg'
@@ -26,9 +28,10 @@ import michael from '../assets/Images/michael-dziedzic-gEN5Btvf2Eg-unsplash.jpg'
 import fotis from '../assets/Images/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg'
 import greg from '../assets/Images/greg-rakozy-oMpAz-DN-9I-unsplash.jpg'
 
-
+// import stylesheet
 import './styles/style.css';
 
+// import slider
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -53,8 +56,7 @@ export default function ConfirmPay(){
                     <Heading fontSize='57px' fontFamily='Roboto Serif' justifyContent='flex-start' w='100%'>Confirm & pay</Heading>
 
                     {/* Free Cancellation box */}
-                    <Flex w='100%' mt='4rem' bgColor='#FCFCFD' height= '82px' padding= '16px 16px 16px 20px'
-                            border='1px solid #D3D4DB' borderRadius='16px' >
+                    <Flex w='100%' mt='4rem' bgColor='#FCFCFD' height= '82px' padding= '16px 16px 16px 20px' border='1px solid #D3D4DB' borderRadius='16px' >
                         <VStack width='100%' >
                             <Text w='100%' fontWeight='600' fontSize='14px'>Free cancellation</Text>
                             <Text w='100%' p={0} fontSize='14px' color='#60646C'>Tickets can be cancelled by 13th December, 2022.</Text>
@@ -70,8 +72,8 @@ export default function ConfirmPay(){
                         </VStack>
                         <VStack w='100%' h='216px' gap='24px'>
                                 <input type="text" placeholder="Full name" className="full-name"/>
-                                <Flex gap='24px' >
 
+                                <Flex gap='24px' >
                                     <select name="cars" className="country-code"> 
                                     <option value="">Country code</option>
                                     <option value=""></option>
@@ -81,6 +83,7 @@ export default function ConfirmPay(){
 
                                     <input type="text" placeholder="Phone number" className="phone-number"/>
                                 </Flex>
+
                                 <Flex gap='24px' >
                                     <input type="text" placeholder="Email" className="email"/>
                                     <input type="text" placeholder="Confirm Email" className="confirm-email"/>
@@ -126,7 +129,7 @@ export default function ConfirmPay(){
                         </VStack>
 
                         
-                        <VStack w='100%' gap='24px' p='28px 24px 0px 24px' border='1px solid #1C2024' borderRadius='16px' h>
+                        <VStack w='100%' gap='24px' p='28px 24px 0px 24px' border='1px solid #1C2024' borderRadius='16px'>
                                 
                                 <VStack gap='28px'>
                                     <Flex w='100%' lineHeight='22px' fontSize='16px'>
@@ -142,18 +145,21 @@ export default function ConfirmPay(){
                                         <Img src={visa}/>
                                         <Img src={mastercard}/>
                                         <Img src={dinnerclub}/>
-
                                     </Flex>
+
                                     <Flex gap='24px' >
                                         <input type="text" placeholder="Name on card" className="payment"/>
                                         <input type="text" placeholder="Card number" className="payment"/>
                                     </Flex>
+
                                     <Flex gap='24px' >
                                         <input type="text" placeholder="Expiry date" className="payment"/>
                                         <input type="text" placeholder="<CVV/CVC>" className="payment"/>
                                     </Flex>
                                 </VStack>
+
                                 <Divider border='1px solid #b9bbc6'/>
+
                                 <VStack w='100%' gap='32px' p='16px 0px 32px 0px'>
                                     <VStack w='100%' gap='2px'>
                                         <Flex w='100%' justifyContent='space-between'>
@@ -163,19 +169,23 @@ export default function ConfirmPay(){
                                                 <Text fontSize='12px' fontWeight={600} lineHeight='18px' color='#ffffff'>You save &lt;price&gt;</Text>
                                             </Flex>
                                         </Flex>
+
                                         <Flex w='100%' gap='8px'>
                                             <Text fontSize='12px' fontWeight={600} lineHeight='18px' color='#60646C'>You will be charged in AED</Text>
                                             <Img src={infogray}/>
                                         </Flex>
                                     </VStack>
+
                                     <VStack w='100%' gap='20px'>
                                         <Text w='100%' fontSize='12px' fontWeight={400} lineHeight='20px' color='#60646C'>By clicking “confirm & pay”, you agree to <href> Tickete’s general terms and conditions</href> and <href>cancellation policy</href>.</Text>
 
-                                        <Flex alignSelf='flex-start' justifyContent='center' p='16px 20px 16px 20px' w='220px' h='56px' border='1px solid #000000' bgColor='#000000' borderRadius='16px' color='#ffffff' gap='12px'> <Img src={lock} /> <Text > Confirm &amp; pay</Text> </Flex>
+                                        <Flex alignSelf='flex-start' justifyContent='center' p='16px 20px 16px 20px' w='220px' h='56px' border='1px solid #000000' bgColor='#000000' borderRadius='16px' color='#ffffff' gap='12px'> 
+                                        <Img src={lock} /> <Text > Confirm &amp; pay</Text> 
+                                        </Flex>
                                     </VStack>
-
                                 </VStack>
                         </VStack>
+
                         <Flex w='100%' border='1px solid #D3D4DB' h='72px' p='24px' borderRadius='16px' bgColor='#F9F9FB' justifyContent='space-between'>
                             <Flex gap='15px' w='151px'>
                                 <Img src={apay} />
@@ -285,26 +295,25 @@ export default function ConfirmPay(){
                                     </Accordion>
 
                                 </VStack>
-
                             </VStack>
                         </VStack>
 
                         <VStack p='16px 16px 32px 16px' gap='32px' w='100%'>
-                            
-                                <VStack w='100%'>
-                                    <Flex justifyContent='space-between' w='100%'>
-                                        <Text fontSize='18px' fontWeight={600} color='#1C2024'>Total payable</Text>
-                                        <Text fontSize='18px' fontWeight={600} color='#1C2024'>$XXX</Text>
-                                    </Flex>
-                                    <Flex w='135px' gap='4px' p='2px 6px 2px 6px' bgColor='#E9F9EE' lineHeight='18px' fontSize='12px' alignSelf='flex-start' borderRadius='1000px'>
-                                        <Img src={piggygreen}/>
-                                        <Text width='135px'   color='#299764'>You saved &lt;price&gt;</Text>
-                                    </Flex>
+                            <VStack w='100%'>
+                                <Flex justifyContent='space-between' w='100%'>
+                                    <Text fontSize='18px' fontWeight={600} color='#1C2024'>Total payable</Text>
+                                    <Text fontSize='18px' fontWeight={600} color='#1C2024'>$XXX</Text>
+                                </Flex>
+
+                                <Flex w='135px' gap='4px' p='2px 6px 2px 6px' bgColor='#E9F9EE' lineHeight='18px' fontSize='12px' alignSelf='flex-start' borderRadius='1000px'>
+                                    <Img src={piggygreen}/>
+                                    <Text width='135px'   color='#299764'>You saved &lt;price&gt;</Text>
+                                </Flex>
                                     <Flex w='100%' gap='8px'>
-                                            <Text fontSize='12px' fontWeight={600} lineHeight='18px' color='#60646C'>You will be charged in AED</Text>
-                                            <Img src={infogray} />
+                                        <Text fontSize='12px' fontWeight={600} lineHeight='18px' color='#60646C'>You will be charged in AED</Text>
+                                        <Img src={infogray} />
                                     </Flex>
-                                </VStack>
+                            </VStack>
                                 <VStack gap='20px' w='100%' >
                                 <Text w='100%' fontSize='12px' fontWeight={400} lineHeight='20px' color='#60646C'>By clicking “confirm & pay”, you agree to Tickete’s general terms and conditions and cancellation policy.</Text>
                                 
@@ -315,7 +324,6 @@ export default function ConfirmPay(){
                                 </VStack>                    
 
                         </VStack>
-
                     </VStack>
                 </VStack>
             </Flex>

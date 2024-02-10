@@ -45,8 +45,8 @@ export default function MPayment(){
 
                     <VStack w='100%' >
                         <Flex  bgColor='#299764' gap='2' w='140px' p='4px 8px 4px 8px' borderRadius='1000px' alignSelf='self-start'>
-                                                        <Img src={piggybank} alt="piggy" />
-                                                        <Text fontSize='12px' fontWeight={600} lineHeight='18px' color='#ffffff'>You save &lt;price&gt;</Text>
+                            <Img src={piggybank} alt="piggy" />
+                            <Text fontSize='12px' fontWeight={600} lineHeight='18px' color='#ffffff'>You save &lt;price&gt;</Text>
                         </Flex>
                         <Text w='100%' fontSize='18px' fontWeight={600} lineHeight='26px' color='#1C2024' p='0px 0px 12px 0px'>Total payable: $XXX</Text>
                         <Flex w='100%' gap='8px'>
@@ -56,26 +56,30 @@ export default function MPayment(){
 
                     </VStack>
                     <VStack w='100%' gap='20px'>
-                                        <Text w='100%' fontSize='12px' fontWeight={400} lineHeight='20px' color='#60646C'>By clicking “confirm & pay”, you agree to <href> Tickete’s general terms and conditions</href> and <href>cancellation policy</href>.</Text>
+                        <Text w='100%' fontSize='12px' fontWeight={400} lineHeight='20px' color='#60646C'>By clicking “confirm & pay”, you agree to <href> Tickete’s general terms and conditions</href> and <href>cancellation policy</href>.</Text>
 
-                                        <Flex alignSelf='flex-start' justifyContent='center' p='16px 20px 16px 20px' w='100%' h='56px' border='1px solid #000000' textAlign='center' bgColor='#000000' borderRadius='16px' color='#ffffff' gap='12px'> <Img src={lock} /> <Text > Confirm &amp; pay</Text> </Flex>
+                        <Flex alignSelf='flex-start' justifyContent='center' p='16px 20px 16px 20px' w='100%' h='56px' border='1px solid #000000' textAlign='center' bgColor='#000000' borderRadius='16px' color='#ffffff' gap='12px'> 
+                            <Img src={lock} /> 
+                            <Text > Confirm &amp; pay</Text> 
+                        </Flex>
                     </VStack>
                 </VStack>
 
                 <Flex w='100%' border='1px solid #D3D4DB' h='72px' p='24px' borderRadius='16px' bgColor='#F9F9FB' justifyContent='space-between'>
-                            <Flex gap='15px' w='151px'>
-                                <Img src={apay} />
-                                <Text >Coming soon</Text>
-                            </Flex>
-                            <Img src={radiogray} />
-                        </Flex>
-                        <Flex w='100%' border='1px solid #D3D4DB' h='72px' p='24px' borderRadius='16px' bgColor='#F9F9FB' justifyContent='space-between'>
-                            <Flex gap='15px' w='151px'>
-                                <Img src={gpay} />
-                                <Text >Coming soon</Text>
-                            </Flex>
-                            <Img src={radiogray} />
-                        </Flex>
+                    <Flex gap='15px' w='151px'>
+                        <Img src={apay} />
+                        <Text >Coming soon</Text>
+                    </Flex>
+                    <Img src={radiogray} />
+                </Flex>
+                
+                <Flex w='100%' border='1px solid #D3D4DB' h='72px' p='24px' borderRadius='16px' bgColor='#F9F9FB' justifyContent='space-between'>
+                    <Flex gap='15px' w='151px'>
+                        <Img src={gpay} />
+                        <Text >Coming soon</Text>
+                    </Flex>
+                    <Img src={radiogray} />
+                </Flex>
             </VStack>
             <Divider border='1px solid #b9bbc6'/>
         </VStack>

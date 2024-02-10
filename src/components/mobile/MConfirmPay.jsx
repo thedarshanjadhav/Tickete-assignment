@@ -111,22 +111,15 @@ export default function MConfirmPay(){
                         <VStack w='100%' p='16px 16px 32px 16px' gap='32px'>
                             <VStack gap='20px' w='100%'>
                                 <VStack w='100%'>
-                                <Flex 
-                                justifyContent='space-between' 
-                                w='100%'>
-                                    <Text 
-                                        fontSize='18px' 
-                                        fontWeight={600} 
-                                        color='#1C2024' 
-                                        lineHeight='26px'
-                                    >
+                                <Flex justifyContent='space-between'w='100%'>
+                                    <Text fontSize='18px' fontWeight={600} color='#1C2024' lineHeight='26px'>
                                         Total payable
                                     </Text>
                                     <Text fontSize='18px' fontWeight={600} color='#1C2024'>$XXX</Text>
                                 </Flex>
-                                <Flex w='135px' gap='4px' p='2px 6px 2px 6px'       bgColor='#E9F9EE' lineHeight='18px' fontSize='12px' alignSelf='flex-start' borderRadius='1000px'>
-                                                <Img src={piggygreen}/>
-                                                <Text width='135px'   color='#299764'>You saved &lt;price&gt;</Text>
+                                <Flex w='135px' gap='4px' p='2px 6px 2px 6px' bgColor='#E9F9EE' lineHeight='18px' fontSize='12px' alignSelf='flex-start' borderRadius='1000px'>
+                                    <Img src={piggygreen}/>
+                                    <Text width='135px'   color='#299764'>You saved &lt;price&gt;</Text>
                                 </Flex>
                                 </VStack>
                                 <Flex w='100%' gap='8px'>
@@ -139,7 +132,6 @@ export default function MConfirmPay(){
                     </VStack>
                 </VStack>
                 <VStack w='100%'>
-                    {/* <Text>free cancelation</Text> */}
                     <Flex w='100%' bgColor='#FCFCFD' padding= '12px 16px 12px 16px'
                                 border='1px solid #D3D4DB' borderRadius='16px' >
                             <VStack width='100%' >

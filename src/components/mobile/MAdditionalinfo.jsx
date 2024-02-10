@@ -11,21 +11,21 @@ export default function MAdditionalinfo(){
 
 
                 <VStack w='100%' gap='20px'>
-                <input type="text" placeholder="Input label" style={{ borderRadius: '16px', border: '1px solid #b9bbc6', width:'100%', height: '56px', padding: '16px'}}/>
+                    <input type="text" placeholder="Input label" style={{ borderRadius: '16px', border: '1px solid #b9bbc6', width:'100%', height: '56px', padding: '16px'}}/>
                 
-                <select name="cars" style={{ borderRadius: '16px', border: '1px solid #b9bbc6', width:'100%', height: '56px', padding: '16px'}}> 
-                    <option value="">Select</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
+                    <select name="cars" style={{ borderRadius: '16px', border: '1px solid #b9bbc6', width:'100%', height: '56px', padding: '16px'}}> 
+                        <option value="">Select</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
 
-                <select name="cars" style={{ borderRadius: '16px', border: '1px solid #b9bbc6', width:'100%', height: '56px', padding: '16px'}}> 
-                    <option value="">Multiselect</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
+                    <select name="cars" style={{ borderRadius: '16px', border: '1px solid #b9bbc6', width:'100%', height: '56px', padding: '16px'}}> 
+                        <option value="">Multiselect</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
                 </VStack>
             </VStack>
             <Divider border='1px solid #b9bbc6' />  
